@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>How to Check Your CPU and GPU Temperatures (And What the Numbers Actually Mean) | The PC Fix Guide</title>
+<meta name="description" content="Check CPU and GPU temperatures in five minutes, learn what idle and load numbers mean, and spot thermal throttling before it costs performance.">
+<style>
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.65;max-width:720px;margin:2rem auto;padding:0 1.25rem;color:#1a1a1a}
+h1{line-height:1.25} h2{margin-top:1.75rem} footer{margin-top:2.5rem;border-top:1px solid #ddd;padding-top:1rem;color:#555}
+a{color:#0b5cad}
+</style>
+</head>
+<body>
+<header>
+<p>The PC Fix Guide</p>
+<h1>How to Check Your CPU and GPU Temperatures (And What the Numbers Actually Mean)</h1>
+</header>
+<main>
+<p>You can't fix overheating you can't see. Checking temperatures is the first step in diagnosing slowdowns, crashes, loud fans, and random shutdowns — and it takes about five minutes. Here's how to do it right.</p>
+
+<h2>1. Pick Your Tool</h2>
+<p>For a quick look, Task Manager (Ctrl+Shift+Esc &gt; Performance &gt; GPU) shows GPU temperature on Windows 10/11 — no install needed. For the full picture, download HWiNFO64 (free): it shows CPU per-core temps, GPU temp, hotspot temps, fan speeds, and thermal throttling flags all in one window. Core Temp is a lighter alternative for CPU only, and GPU-Z is excellent for graphics cards specifically. Avoid random "PC optimizer" tools that bundle temperature widgets with junkware.</p>
+
+<h2>2. Learn Your Baseline</h2>
+<p>Check temps at idle first — close everything except the monitoring tool and wait a couple of minutes. A healthy desktop typically idles around 30–45°C on the CPU and 30–40°C on the GPU; laptops run warmer, often 45–60°C at idle, because everything is packed tighter. Write these numbers down. Without a baseline, load temperatures are meaningless.</p>
+
+<h2>3. Test Under Load</h2>
+<p>Idle temps only tell half the story. Run something demanding for 10–15 minutes — a game you actually play is the most honest test — and watch the numbers. For a synthetic test, Cinebench (CPU) or a demanding game benchmark works; be cautious with FurMark, which pushes GPUs harder than any real workload and can trip protections on its own. What you're looking for is the sustained temperature, not a one-second spike.</p>
+
+<h2>4. Know What's Normal and What Isn't</h2>
+<p>Rough guide for sustained load temperatures: CPUs are generally fine up to the low 80s°C, getting uncomfortable in the high 80s, and throttling or shutting down past ~95–100°C (exact limits vary by chip). GPUs typically run 65–85°C under load; consistently above 85–90°C deserves attention. Laptops always run hotter than desktops — judge a laptop against itself (your baseline), not against desktop numbers you saw online. One hot core among cool ones can indicate a bad thermal paste mount; all cores hot together usually means airflow or dust.</p>
+
+<h2>5. Watch for Throttling, Not Just Heat</h2>
+<p>High temperature alone isn't the problem — throttling is. In HWiNFO, watch for "Thermal Throttling" flags turning to YES, and compare your CPU's actual clock speed under load against its rated boost speed. A processor at 95°C holding full boost is fine; one at 85°C that's dropped to half speed has a cooling problem. Similarly, sudden performance drops after a few minutes of gaming (fine at first, then stuttery) is the classic thermal-throttle signature.</p>
+
+<h2>6. Check the Fans Too</h2>
+<p>While you're monitoring, note fan speeds and behavior. Fans at maximum during light work mean the heatsink can't shed heat (dust, dried paste, or blocked vents). Fans that never spin up under load mean a dead fan or broken fan control — check this before assuming the worst. A fan that ramps up and down erratically at idle can often be calmed with a smoother fan curve.</p>
+
+<h2>7. Act on What You Find</h2>
+<p>Monitoring without action is just anxiety. If load temps are high: clean the dust out first (cheapest fix), make sure vents aren't blocked and the laptop isn't sitting on a bed, then look at cooling properly — <a href="https://techisness.com/best-software-for-fan-control/">a guide to free fan control software</a> will show you how to make the fans respond to actual temperature instead of the factory's quiet-first defaults. If temps stay bad after cleaning and sane fan curves, the next step is thermal paste replacement (on machines more than a few years old, dried paste is extremely common).</p>
+
+<p>Check your temps once a season, or any time performance changes for no apparent reason. Five minutes with HWiNFO answers questions that weeks of guessing can't.</p>
+</main>
+<footer>
+<p>More PC hardware guides at <a href="https://techisness.com">Techisness</a>.</p>
+</footer>
+</body>
+</html>
